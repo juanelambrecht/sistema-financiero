@@ -1,4 +1,4 @@
-# SAMPOS · APP Financiera — Demo comercial
+# APP Financiera · APP Financiera — Demo comercial
 
 Demo pública, responsive e interactiva inspirada en APP Financiera. La versión real está desarrollada en Laravel y no está incluida en este repositorio.
 
@@ -22,3 +22,7 @@ En **Settings → Pages → Build and deployment**, seleccionar **Source: Deploy
 **Todos los datos son ficticios.** No se publicaron dumps, credenciales, contraseñas, contactos reales, código PHP/Laravel ni información de clientes. No se realiza ningún movimiento económico real. Los formularios sólo modifican registros simulados en la memoria de la pestaña y se reinician al recargar.
 
 Esta demo no ofrece autenticación real, persistencia, integración bancaria, mensajes de WhatsApp ni cálculos financieros auditables. Su fin es exclusivamente comercial y visual.
+
+
+## Identidad visual
+Demo rediseñada a partir de la estructura de la APP Financiera Laravel v5: sidebar retraída, paneles AdminLTE/Bootstrap de estilo azul empresarial, tarjetas de saldo vencido y grillas de operaciones. Los clientes, empresas, correos, documentos y bancos de ejemplo son ficticios y están etiquetados como tales.
