@@ -124,5 +124,5 @@ document.getElementById('toggleSide').onclick=()=>document.getElementById('sideb
 document.getElementById('themeToggle').onclick=()=>{let dark=document.body.classList.toggle('dark');document.getElementById('themeToggle').innerHTML=dark?'<i class="fas fa-sun"></i>':'<i class="fas fa-moon"></i>';try{localStorage.setItem('financiera-public-demo-theme',dark?'dark':'light')}catch(e){}};
 document.getElementById('notifications').onclick=()=>alertDemo('No hay nuevas notificaciones en la demo.');
 document.getElementById('closeModal').onclick=closeModal;document.getElementById('cancelModal').onclick=closeModal;document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-try{if(localStorage.getItem('financiera-public-demo-theme')==='dark'){document.body.classList.add('dark');document.getElementById('themeToggle').textContent='☀'}}catch(e){}
+try{if(localStorage.getItem('financiera-public-demo-theme')==='dark'){document.body.classList.add('dark');document.getElementById('themeToggle').innerHTML='<i class="fas fa-sun"></i>'}}catch(e){}
 if(!views[page])page='dashboard';render();
