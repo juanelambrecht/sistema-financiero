@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0b1e34"><title>Sampos · Financial Workspace | Demo</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="app-shell" id="appShell">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><div class="brand-icon">S<span>·</span></div><div class="brand-name"><strong>SAMPOS</strong><span>FINANCIAL WORKSPACE</span></div></div>
+ <div class="workspace"><div class="work-icon">SF</div><div class="work-text"><strong>Espacio de trabajo</strong><span>Demo comercial</span></div><span class="chev">⌄</span></div>
+ <div class="side-label">GENERAL</div>
+ <nav id="navigation">
+ <button data-page="dashboard" class="navitem active"><span class="navicon">▦</span><span class="navtext">Escritorio</span></button>
+ <button data-page="transacciones" class="navitem"><span class="navicon">⇄</span><span class="navtext">Transacciones</span></button>
+ <button data-page="creditos" class="navitem"><span class="navicon">▤</span><span class="navtext">Créditos</span><span class="nav-count">8</span></button>
+ <button data-page="cheques" class="navitem"><span class="navicon">▣</span><span class="navtext">Cheques</span><span class="nav-count">8</span></button>
+ <button data-page="agenda" class="navitem"><span class="navicon">▦</span><span class="navtext">Agenda de cobranzas</span></button>
+ <div class="side-label">ADMINISTRACIÓN</div>
+ <button data-page="estadisticas" class="navitem"><span class="navicon">◫</span><span class="navtext">Estadísticas</span></button>
+ <button data-page="usuarios" class="navitem"><span class="navicon">♙</span><span class="navtext">Usuarios y roles</span></button>
+ <button data-page="oficinas" class="navitem"><span class="navicon">▥</span><span class="navtext">Oficinas</span></button>
+ </nav>
+ <div class="side-bottom"><div class="side-note"><span class="pulse"></span><div><strong>Entorno demostrativo</strong><small>Información ficticia</small></div></div><div class="sidebar-user"><div class="avatar">AD</div><div class="user-name"><strong>Administrador Demo</strong><span>Acceso completo</span></div><span>···</span></div></div>
+</aside>
+<div class="page-wrap">
+<header class="topbar"><div class="top-left"><button id="toggleSide" class="icon-btn" title="Expandir o retraer menú">☰</button><div class="breadcrumb">SAMPOS <span>/</span> <span id="crumb">Escritorio</span></div></div><div class="top-right"><span class="demo-indicator">● DEMO EN VIVO</span><button id="themeToggle" class="icon-btn" title="Cambiar tema">☾</button><button class="icon-btn notification-btn" id="notifications" title="Notificaciones">♧<span></span></button><div class="top-avatar">AD</div></div></header>
+<main class="main" id="main"><div id="content"></div><footer class="footer">SAMPOS · APP Financiera <span>Versión demostrativa · Datos completamente ficticios · Sin conexión bancaria ni financiera real</span></footer></main>
+</div>
+</div>
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal-mask" hidden><div class="modal"><div class="modal-head"><div><span class="overline">MODO DEMOSTRACIÓN</span><h2 id="modalTitle">Nuevo registro</h2></div><button id="closeModal" class="icon-btn">✕</button></div><form id="demoForm"><div id="modalBody"></div><div class="modal-foot"><button type="button" class="btn secondary" id="cancelModal">Cancelar</button><button type="submit" class="btn primary">Guardar simulación</button></div></form></div></div>
+<script src="app.js"></script></body></html>
