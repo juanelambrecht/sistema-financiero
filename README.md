@@ -16,7 +16,7 @@ Demo pública, responsive e interactiva inspirada en APP Financiera. La versión
 
 Abrir `index.html` o publicar en GitHub Pages. No requiere instalar dependencias ni configurar servidores.
 
-En **Settings → Pages**, configurar **Build and deployment → Source: GitHub Actions**. El workflow de `.github/workflows/pages.yml` publica automáticamente el frontend al actualizar `main`.
+En **Settings → Pages → Build and deployment**, seleccionar **Source: Deploy from a branch**, **Branch: main**, **Folder: /(root)** y pulsar **Save**. La demo es estática (HTML/CSS/JavaScript), así que no necesita GitHub Actions. URL prevista: https://juanelambrecht.github.io/sistema-financiero/.
 
 ## Datos y seguridad
 **Todos los datos son ficticios.** No se publicaron dumps, credenciales, contraseñas, contactos reales, código PHP/Laravel ni información de clientes. No se realiza ningún movimiento económico real. Los formularios sólo modifican registros simulados en la memoria de la pestaña y se reinician al recargar.
